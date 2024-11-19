@@ -37,7 +37,7 @@ jobs:
         echo "STAGE_URL=${{ secrets.STAGE_URL }}" >> $GITHUB_ENV
 
     - name: Run Playwright tests
-      run: npx playwright test --project=chromium
+      run: npx playwright test --project=firefox
       env:
         LOGIN_EMAIL: ${{ secrets.LOGIN_EMAIL }}
         LOGIN_PASSWORD: ${{ secrets.LOGIN_PASSWORD }}
